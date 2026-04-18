@@ -1,0 +1,61 @@
+patient_id,date,department,overall_rating,wait_time_rating,staff_rating,cleanliness_rating,feedback_text
+P001,2024-01-03,Cardiology,5,4,5,5,The doctors and nurses were absolutely wonderful. I felt cared for and respected throughout my entire stay. Everything was explained clearly and I had no concerns.
+P002,2024-01-05,Emergency,2,1,3,2,I waited over four hours in the emergency room without anyone checking on me. The waiting area was dirty and understaffed. Very disappointing experience.
+P003,2024-01-07,Orthopedics,4,3,4,4,The surgical team was professional and the recovery room staff were kind. Wait times were a bit long but the care quality made up for it.
+P004,2024-01-09,Pediatrics,5,5,5,5,My child was treated with such kindness. The pediatric nurses went above and beyond to make the experience less scary. Truly outstanding care.
+P005,2024-01-11,Radiology,3,2,4,3,The MRI scan itself was fine but waiting over two hours for a scheduled appointment is unacceptable. Please fix the scheduling system.
+P006,2024-01-13,Cardiology,1,1,2,1,Terrible experience. The doctor was rude and dismissive. The room was dirty and my concerns were completely ignored. I will not return to this hospital.
+P007,2024-01-15,Emergency,4,2,5,4,The wait was long as expected in an emergency department but the nursing staff were exceptional. Very thorough and reassuring. Good overall care.
+P008,2024-01-17,Oncology,5,4,5,5,My cancer treatment journey has been supported brilliantly by this team. The oncologists are world-class and I feel genuinely cared for.
+P009,2024-01-19,Gynecology,4,4,4,4,Professional and respectful staff. I felt comfortable discussing sensitive issues. The appointment ran close to schedule which I appreciated.
+P010,2024-01-21,Orthopedics,2,2,2,3,The physiotherapy exercises prescribed were incorrect for my condition. I had to seek a second opinion elsewhere. Billing was also confusing and overcharged me.
+P011,2024-01-23,Neurology,5,5,5,5,Exceptional diagnosis and treatment plan. The neurologist took time to explain everything in detail. I left feeling confident in my care plan.
+P012,2024-01-25,Emergency,3,1,4,3,Emergency rooms are always stressful but the nurses here made it bearable. Doctor seemed rushed but was competent. Long wait but understandable.
+P013,2024-01-27,Cardiology,4,4,4,5,Follow-up appointment was well organised. The cardiologist reviewed all my test results thoroughly. Clean and well-maintained facilities.
+P014,2024-01-29,Pediatrics,2,3,2,2,The pediatrician barely listened to my concerns about my daughter. Felt very rushed and the prescription seemed generic. Disappointed with the care.
+P015,2024-02-01,Radiology,5,4,5,5,Ultra-modern scanning equipment and very professional radiologist. Results were explained clearly the same day. Excellent service.
+P016,2024-02-03,Oncology,3,3,4,3,The chemotherapy nursing team is excellent but the administrative side is chaotic. Appointment letters had wrong times and billing was incorrect twice.
+P017,2024-02-05,Gynecology,5,5,5,5,Absolutely wonderful antenatal care. The midwife team was supportive, knowledgeable and always available. Could not ask for better.
+P018,2024-02-07,Emergency,1,1,1,1,Waited five hours for what turned out to be a broken wrist. Staff were rude and dismissive. The environment was filthy. This is unacceptable healthcare.
+P019,2024-02-09,Neurology,4,4,5,4,The neurology team handled my migraine diagnosis with care and expertise. Treatment plan is working well and follow-ups are prompt.
+P020,2024-02-11,Orthopedics,5,4,5,5,My hip replacement surgery and recovery have been managed perfectly. The surgical team is outstanding. Highly recommend this department.
+P021,2024-02-13,Cardiology,3,2,4,3,Stress test was well administered but I waited nearly 90 minutes past my appointment. The waiting area needs better air conditioning. Doctor was good.
+P022,2024-02-15,Pediatrics,5,5,5,5,The children's ward is a wonderful environment. Staff make the children feel at ease. My son actually said he wasn't scared of hospital anymore.
+P023,2024-02-17,Radiology,2,1,3,3,Scheduling is a disaster. I had my CT scan cancelled three times due to equipment issues. When it finally happened the staff were fine but the delays are inexcusable.
+P024,2024-02-19,Oncology,5,4,5,4,The palliative care team provided my family member with dignity and compassion. Words cannot express our gratitude. Truly exceptional human beings.
+P025,2024-02-21,Emergency,4,3,4,4,Came in with chest pain and was seen quickly which I appreciated. All tests were explained and the discharge process was clear. Good emergency care.
+P026,2024-02-23,Gynecology,3,3,3,3,Average experience. Nothing particularly wrong but nothing stood out. The appointment felt rushed and I wish the doctor had answered my questions more fully.
+P027,2024-02-25,Neurology,2,2,2,3,I was misdiagnosed initially which caused weeks of unnecessary anxiety. When I sought a second opinion the error was found. The hospital should apologise.
+P028,2024-02-27,Cardiology,5,5,5,5,World-class cardiology team. My stent procedure was explained thoroughly and the post-operative care was exceptional. Feel like a new person. Thank you.
+P029,2024-03-01,Orthopedics,4,3,5,4,The knee arthroscopy was quick and the surgeon explained everything before and after. Recovery support materials were helpful and clear.
+P030,2024-03-03,Pediatrics,3,4,3,4,The paediatrician was knowledgeable but communication with parents could be improved. I had to ask multiple times for updates. Facilities are good though.
+P031,2024-03-05,Emergency,5,3,5,5,I was involved in a road accident and the emergency team saved my life. Forever grateful. The trauma team was professional and incredibly fast.
+P032,2024-03-07,Radiology,4,4,4,4,Smooth and professional experience. The ultrasound technician was thorough and reassuring. Results were ready sooner than expected. Very happy.
+P033,2024-03-09,Oncology,2,2,3,2,The treatment protocol seems outdated compared to what I have read online. The ward is understaffed and the cleaning schedule is clearly not being followed.
+P034,2024-03-11,Gynecology,5,5,5,5,The hysteroscopy procedure went smoothly. The team was sensitive and professional throughout. Post-procedure care was thorough. Highly recommend.
+P035,2024-03-13,Neurology,4,4,4,4,EEG test was conducted professionally. The neurologist was patient and explained the results in plain language which I appreciated greatly.
+P036,2024-03-15,Cardiology,2,2,3,2,The ECG results were misread initially and I was sent home incorrectly. Only when I came back was the correct diagnosis made. Dangerous mistake.
+P037,2024-03-17,Emergency,3,1,4,3,Standard emergency room visit. Long wait as usual but the doctor was attentive when she finally saw me. Facility could be cleaner but the care was decent.
+P038,2024-03-19,Orthopedics,1,2,1,2,The physiotherapist seemed unqualified and gave me exercises that worsened my injury. I am now seeking legal advice about the standard of care received.
+P039,2024-03-21,Pediatrics,5,4,5,5,The neonatal team looking after our premature baby have been extraordinary. Their expertise and empathy during an extremely difficult time was remarkable.
+P040,2024-03-23,Radiology,3,3,3,3,The imaging was fine but the reporting turnaround was very slow. It took over a week to get my results which caused significant anxiety. Improve the reporting speed.
+P041,2024-03-25,Oncology,4,3,5,4,The oncology nurses are the heart of this department. Incredibly compassionate. The doctors are also excellent though sometimes hard to get hold of.
+P042,2024-03-27,Gynecology,2,2,2,2,Felt completely rushed during my consultation. The doctor didn't make eye contact once. My questions about the diagnosis were dismissed. Very poor bedside manner.
+P043,2024-03-29,Neurology,5,5,5,5,Successfully diagnosed my epilepsy after years of searching for answers. The neurology team was meticulous. I finally have an effective treatment plan.
+P044,2024-04-01,Cardiology,4,4,4,5,Annual cardiac checkup was thorough and reassuring. All test results explained in detail. The clinic runs efficiently and on time. Very professional.
+P045,2024-04-03,Emergency,2,1,3,2,Brought my elderly mother in with a fall and we waited over three hours. For an elderly patient this is inappropriate triage. The staff were polite but overwhelmed.
+P046,2024-04-05,Orthopedics,5,5,5,5,My spinal surgery outcome has been life-changing. The surgical team's skill and the rehabilitation programme have exceeded all expectations. Deeply grateful.
+P047,2024-04-07,Pediatrics,4,4,4,4,The allergy testing for my child was well organised and conducted sensitively. The allergist explained all results clearly and provided a detailed action plan.
+P048,2024-04-09,Radiology,1,1,2,2,My biopsy results were sent to the wrong patient. This is a catastrophic privacy and safety failure. Extremely distressing and completely unacceptable.
+P049,2024-04-11,Oncology,5,4,5,5,Completed my final round of chemotherapy. The entire oncology team has been my rock. Their dedication to patient wellbeing is truly inspirational. Thank you all.
+P050,2024-04-13,Gynecology,4,4,4,4,The fertility consultation was handled with sensitivity and professionalism. Options were explained clearly without pressure. Felt supported and informed.
+P051,2024-04-15,Neurology,3,3,3,4,The appointment itself was fine but the referral from my GP took three months. Once I got here the neurologist was helpful. System-level delays are the problem.
+P052,2024-04-17,Cardiology,5,5,5,5,Emergency cardiac intervention was carried out flawlessly. The cardiac care unit team was exceptional. I genuinely believe they saved my life. Outstanding.
+P053,2024-04-19,Emergency,4,2,5,4,Extremely competent medical staff. The wait was long but I was kept informed throughout which made a big difference. Nurses were warm and attentive.
+P054,2024-04-21,Orthopedics,3,3,3,3,The treatment was adequate but communication about next steps was lacking. I had to follow up multiple times to get my physiotherapy referral processed.
+P055,2024-04-23,Pediatrics,2,2,2,2,The ward was noisy and understaffed during the night shift. My child was distressed and it took a very long time for nursing staff to respond to the call button.
+P056,2024-04-25,Radiology,5,5,5,5,Cutting-edge PET scan technology and a very professional nuclear medicine team. Results were detailed and communicated clearly. Excellent department.
+P057,2024-04-27,Oncology,4,4,4,4,The immunotherapy programme is well managed. Side effects were anticipated and handled proactively. The specialist nurse is an absolute star. Very good care.
+P058,2024-04-29,Gynecology,5,5,5,5,The obstetrics team who delivered my twins were phenomenal. Their skill and calmness during a complicated delivery was extraordinary. Forever thankful.
+P059,2024-05-01,Neurology,2,2,3,2,Prescribed medication that I had previously reported as causing adverse reactions. This information was in my notes. A serious and avoidable error. Very concerned.
+P060,2024-05-03,Cardiology,4,4,4,4,The cardiac rehabilitation programme has been transformative. The team is encouraging and the programme is well structured. Feeling much stronger each week.

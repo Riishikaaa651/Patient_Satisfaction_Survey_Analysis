@@ -1,0 +1,56 @@
+PATIENT SATISFACTION ANALYSIS — Executive Summary
+Generated: 2026-04-18 07:37
+────────────────────────────────────────────────────────────
+
+This report covers 59 patient survey responses.
+The overall average satisfaction rating is 3.56 out of 5, placing the facility in the moderate tier (3–4).
+Sentiment analysis reveals 71.2% positive and 25.4% negative responses.
+Best-performing department: oncology (avg 4.00/5).
+Department requiring attention: emergency (avg 3.11/5).
+Priority scoring identified 8 critical-priority cases that require immediate follow-up.
+
+Key alerts raised in this report:
+  • [CRITICAL] 25.4% of patients gave a rating of 2 or below — immediate corrective action required.
+  • [WARNING] 'radiology' has 42.9% negative sentiment — review staffing and patient communication.
+  • [CRITICAL] 8 cases scored 7+ on priority — immediate follow-up recommended.
+
+KEY FINDINGS
+────────────────────────────────────────
+[📋] Survey Volume
+    59 responses collected. Moderate sample — interpret trends with caution.
+
+[📊] Overall Rating — 3.56 / 5 (Moderate)
+    Mean: 3.56 | Median: 4.0 | Low-rated (≤2): 25.4% | High-rated (≥4): 57.6%.
+
+[📈] Net Promoter Score (NPS) — +32.2
+    Promoters: 57.6% | Detractors: 25.4%. NPS above 0 indicates more advocates than critics.
+
+[😊] Sentiment — 71.2% Positive
+    Positive: 71.2% | Neutral: 3.4% | Negative: 25.4%. Overall patient sentiment is favourable.
+
+[🏥] Department Performance Spread
+    Best performer: oncology (4.00/5) | Needs improvement: emergency (3.11/5) | Rating gap: 0.89 points.
+
+[🏷️] Top Complaint Category — General
+    'General' is the most common issue (47.5% of responses). Total distinct categories: 6.
+
+[⚡] Priority Scoring — 8 Critical Cases
+    Critical (≥7): 8 | High (5–7): 8 | Average priority score: 3.46/10. Urgent escalation required for critical cases.
+
+[📝] Feedback Richness
+    Average feedback length: 13.7 words. 100.0% of responses contain substantive text feedback. Short average feedback length — consider redesigning open-text prompts.
+
+TRENDS
+────────────────────────────────────────
+  Average VADER Compound Score: +0.338 (range −1 to +1; positive = favourable)
+  #1 Most Reported Issue: General — 28 responses (47.5%)
+  #2 Most Reported Issue: Waiting Time — 12 responses (20.3%)
+  #3 Most Reported Issue: Medical Care — 10 responses (16.9%)
+  Rating Trend (first vs latest month): 3.50 → 3.00 (declined by 0.50 points)
+  Peak Complaint Month: 2024-03
+
+ALERTS
+────────────────────────────────────────
+  [CRITICAL] 25.4% of patients gave a rating of 2 or below — immediate corrective action required.
+  [WARNING] 'radiology' has 42.9% negative sentiment — review staffing and patient communication.
+  [CRITICAL] 8 cases scored 7+ on priority — immediate follow-up recommended.
