@@ -24,6 +24,15 @@ def _glass_layout(fig, title: str = ""):
 def render_eda(df: pd.DataFrame):
     st.markdown('<h2 class="section-title">🔍 Exploratory Data Analysis</h2>', unsafe_allow_html=True)
 
+    # Fix any datetime columns that should be numeric
+    for col in df.columns:
+        if pd.api.types.is_datetime64_any_dtype(df[col]) and ('rating' in col or 'score' in col or 'wait' in col):
+            # Convert back to numeric if possible
+            try:
+                df[col] = pd.to_numeric(df[col].astype(str).str.extract(r'(\d+)')[0], errors='coerce')
+            except:
+                pass
+
     kpi_cols = st.columns(4)
     with kpi_cols[0]:
         st.metric("Total Responses", len(df))
@@ -45,7 +54,7 @@ def render_eda(df: pd.DataFrame):
             fig = px.histogram(df, x=rating_col, nbins=10,
                                title="Overall Rating Distribution",
                                color_discrete_sequence=["#6366f1"])
-            fig.update_layout(bargap=0.1)
+            fig.update_layout(bargap=0.1, xaxis_title="Rating", yaxis_title="Count")
             _glass_layout(fig)
             st.plotly_chart(fig, use_container_width=True)
         with col2:
@@ -55,8 +64,49 @@ def render_eda(df: pd.DataFrame):
                               title="Avg Rating by Department",
                               color=rating_col, color_continuous_scale="RdYlGn",
                               text_auto=".2f")
+                fig2.update_layout(xaxis_title="Average Rating", yaxis_title="Department")
                 _glass_layout(fig2)
                 st.plotly_chart(fig2, use_container_width=True)
+    else:
+        st.warning("⚠️ No rating column found. Upload a dataset with rating/score columns for better analysis.")
+
+    # Additional rating columns analysis
+    rating_cols = [c for c in df.columns if 'rating' in c or 'score' in c]
+    numeric_rating_cols = [c for c in rating_cols if pd.api.types.is_numeric_dtype(df[c])]
+    
+    if len(numeric_rating_cols) > 1:
+        st.subheader("📊 Rating Breakdown by Category")
+        cols = st.columns(min(len(numeric_rating_cols), 4))
+        for idx, col in enumerate(numeric_rating_cols[:4]):
+            with cols[idx]:
+                avg_val = df[col].mean()
+                st.metric(
+                    col.replace('_', ' ').title(),
+                    f"{avg_val:.2f}",
+                    delta=f"{avg_val - 3:.2f} vs neutral" if avg_val != 3 else None
+                )
+        
+        # Radar chart for multiple ratings
+        if len(numeric_rating_cols) >= 3:
+            avg_ratings = {col.replace('_', ' ').title(): df[col].mean() for col in numeric_rating_cols[:6]}
+            
+            fig_radar = go.Figure()
+            fig_radar.add_trace(go.Scatterpolar(
+                r=list(avg_ratings.values()),
+                theta=list(avg_ratings.keys()),
+                fill='toself',
+                line_color='#6366f1',
+                fillcolor='rgba(99, 102, 241, 0.3)'
+            ))
+            fig_radar.update_layout(
+                polar=dict(
+                    radialaxis=dict(visible=True, range=[0, 5])
+                ),
+                title="Rating Categories Comparison",
+                paper_bgcolor=PLOTLY_PAPER,
+                font_color=PLOTLY_FONT
+            )
+            st.plotly_chart(fig_radar, use_container_width=True)
 
     # Trend over time
     date_cols = df.select_dtypes(include="datetime64[ns]").columns.tolist()
@@ -66,8 +116,22 @@ def render_eda(df: pd.DataFrame):
         trend[dc] = trend[dc].astype(str)
         fig3 = px.line(trend, x=dc, y=rating_col, title="Rating Trend Over Time", markers=True,
                        color_discrete_sequence=["#8b5cf6"])
+        fig3.update_layout(xaxis_title="Month", yaxis_title="Average Rating")
         _glass_layout(fig3)
         st.plotly_chart(fig3, use_container_width=True)
+
+    # Department comparison with all ratings
+    if "department" in df.columns and len(numeric_rating_cols) > 0:
+        st.subheader("🏥 Department Performance Comparison")
+        dept_ratings = df.groupby("department")[numeric_rating_cols].mean().reset_index()
+        
+        fig_dept = px.bar(dept_ratings, x="department", y=numeric_rating_cols[:5],
+                          title="Department Ratings Comparison",
+                          barmode="group",
+                          color_discrete_sequence=px.colors.qualitative.Set2)
+        fig_dept.update_layout(xaxis_title="Department", yaxis_title="Average Rating")
+        _glass_layout(fig_dept)
+        st.plotly_chart(fig_dept, use_container_width=True)
 
     # NPS breakdown
     if "nps_category" in df.columns:
