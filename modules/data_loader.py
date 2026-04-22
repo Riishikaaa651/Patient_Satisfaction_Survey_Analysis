@@ -14,7 +14,10 @@ def load_data(uploaded_file) -> pd.DataFrame:
 
     if name.endswith(".csv"):
         try:
-            df = pd.read_csv(uploaded_file)
+            # Reset file pointer to beginning
+            uploaded_file.seek(0)
+            # Use quoting parameter to handle commas in text fields
+            df = pd.read_csv(uploaded_file, quoting=1, encoding='utf-8', on_bad_lines='skip')
             valid, reason = is_patient_survey(df)
             if not valid:
                 st.error(f"❌ {reason}")
