@@ -393,13 +393,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 👨‍💻 Author
-
-**HCL Internship Project**  
-Patient Satisfaction Analytics Platform
-
----
-
 ## 🙏 Acknowledgments
 
 - **Streamlit** - For the amazing web framework
