@@ -393,12 +393,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
 ## 👨‍💻 Author
 
 **HCL Internship Project**  
@@ -412,30 +406,6 @@ Patient Satisfaction Analytics Platform
 - **VADER Sentiment** - For robust sentiment analysis
 - **Plotly** - For interactive visualizations
 - **HCL Technologies** - For the internship opportunity
-
----
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-- Open an issue on GitHub
-- Contact the development team
-
----
-
-## 🗺️ Roadmap
-
-### Upcoming Features
-- [ ] PDF report generation
-- [ ] Email alert system for critical cases
-- [ ] Multi-language support
-- [ ] Advanced ML models (BERT, transformers)
-- [ ] Real-time data streaming
-- [ ] API integration for external systems
-- [ ] Mobile-responsive design enhancements
-- [ ] Role-based access control
-- [ ] Historical trend comparison
-- [ ] Predictive analytics
 
 ---
 
