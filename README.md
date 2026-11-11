@@ -1,4 +1,4 @@
-# 🏥 MedInsight AI
+# Patient Satisfaction Survey Analysis
 
 **Intelligent Insights. Better Care.**
 
